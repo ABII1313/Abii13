@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личные финансы - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">MyMoney</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="add.html">Добавить</a></li>
+                <li><a href="history.html">История</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>📊 Мои финансы</h1>
+            
+            <div id="message" class="message"></div>
+
+            <div class="dashboard-grid" id="stats">
+                <!-- Статистика будет добавлена через JS -->
+            </div>
+
+            <div class="card">
+                <h2>Последние операции</h2>
+                <div class="table-container">
+                    <table id="recent-transactions">
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Категория</th>
+                                <th>Описание</th>
+                                <th>Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recent-transactions-body">
+                            <!-- Транзакции будут добавлены через JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Управление личными финансами</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
